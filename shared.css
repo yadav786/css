@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+#product-overview {
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url("freedom.jpg") left 10% bottom 20%/cover no-repeat border-box, #ff1b68 ;
+    /*background: url("freedom.jpg");
+    background-size: cover;
+    background-clip: border-box;
+    background-position: left 10% bottom 20%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box;
+    */
+    height: 528px;
+    width: 100%;
+    padding: 10px;
+    /* margin-top: 43px; */
+    position: relative;
+}
+
+#product-overview h1{
+    color:#ffffff;
+    font-family: 'Anton', 'sans-serif';
+}
+
+.section-title {
+    color: #2ddf5c;
+    text-align: center;   
+}
+
+.main-header {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc( 100% - 136px);
+    vertical-align: middle;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0px 16px;
+}
+
+.main-header__brand {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0e4f1f;
+    vertical-align: middle;
+    display: inline-block;
+    width: 20px;
+}
+
+.main-header__brand img {
+    width: 100%;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0px;
+}
+
+.main-nav__item a:hover, .main-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a, .mobile-nav__item--cta a {
+   color: white;
+   background-color: #ff1b68;
+   padding: 8px 16px;
+   border-radius: 8px;
+   text-decoration: none;
+}
+
+.main-nav__item--cta a:hover, .main-nav__item--cta a:active, .mobile-nav__item--cta a:hover, .mobile-nav__item--cta a:active {
+    color:#ff1b68;;
+    background-color: white;
+    border:none
+}
+
+.button {
+    background-color:#0e4f1f;
+    color: white;
+    border: 1.5px solid #0e4f1f;
+    border-radius: 8px;
+    padding: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,.button:active {
+    background-color: white;
+    color: #0e4f1f;
+}
+
+.main-footer {
+    background: black;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.main-footer__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a {
+     color:white;
+     text-decoration: none;
+}
+
+.main-footer__link a:hover, .main-footer__link a:active {
+    color:#ccc;
+}
+
+.main-nav__item--cta {
+  transform: rotate(4deg);
+  transition: transform 2s ease-in-out;
+}
+ 
+.main-nav__item--cta:hover {
+    animation-name: itemcta;
+    animation-duration: 500ms;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes itemcta {
+    0% {background-color: red; transform: rotate(45deg);}
+    25% {background-color: purple; transform: rotate(90deg);}
+    50% {background-color:blueviolet; transform: rotate(180deg);}
+    75% {background-color: blue; transform: rotate(270deg);}
+    100% {background-color: green;transform: rotate(360deg);}
+} 

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="backdrop">
+    </div>
+    <div class="modal">
+            <h1 class="modal__title">Do you want to continue?</h1>
+            <div class="modal__actions">
+                <a href="start-hosting/index.html" class="modal__action">Yes</a>
+                <button class="modal_action modal__action--negative">No</button>
+            </div>
+    </div>
+    <header class="main-header">
+        <div>
+        <button class="toggle-button">
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+        </button>
+        <a href="index.html" class="main-header__brand"><img  class="uhost" src="uhost-icon.png" alt="Your Favourite Hosting Company"></a>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="packages/index.html">Packages</a></li>
+                <li class="main-nav__item"><a href="index.html">Customers</a></li>
+                <li class="main-nav__item main-nav__item--cta"><a href="index.html">Start Hosting</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="product-overview">
+        <h1>Get the freedom you deserve</h1>
+        </section>
+        <section id="plans">
+            <h1 class="section-title">Choose your plan</h1>
+            <div class="plan_lists">
+                <article class="plan">
+                    <h1 class="plan__title">Free</h1>
+                    <h2 class="plan__price">$0/Month</h2>
+                    <h3>For hobby projects or small teams</h3>
+                    <ul class="plan__features">
+                        <li class="plan__feature">1 workspace</li>
+                        <li class="plan__feature">Unlimited traffic</li>
+                        <li class="plan__feature">10GB Storage</li>
+                        <li class="plan__feature">Basic Support</li>
+                    </ul>
+                    <div>
+                        <button class="button">Choose Plan</button>
+                    </div>
+                </article>
+                <article class="plan plan__highlighted">
+                    <h1 class="plan__annotation">Recommended</h1>
+                    <h1 class="plan__title">PLUS</h1>
+                    <h2 class="plan__price">$29/month</h2>
+                    <h3>For ambitious projects</h3>
+                    <ul class="plan__features">
+                        <li class="plan__feature">5 workspaces</li>
+                        <li class="plan__feature">Unlimited traffic</li>
+                        <li class="plan__feature">10GB Storage</li>
+                        <li class="plan__feature">Plus Support</li>
+                    </ul>
+                    <div>
+                        <button class="button">Choose Plan</button>
+                    </div>
+                </article>
+                <article class="plan">
+                    <h1 class="plan__title">Premium</h1>
+                    <h2 class="plan__price">$99/Month</h2>
+                    <h3>Your enterprise solutions</h3>
+                    <ul class="plan__features">
+                        <li class="plan__feature">10 workspaces</li>
+                        <li class="plan__feature">Unlimited traffic</li>
+                        <li class="plan__feature">Unlimited Storage</li>
+                        <li class="plan__feature">Priority Support</li>
+                    </ul>
+                    <div>
+                        <button class="button">Choose Plan</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="key-features">
+            <h1 class="section-title">Many good reasons to stick around</h1>
+            <ul class="key-feature__list">
+                <li class="key-feature">
+                    <div class="key-feature__image">
+
+                    </div>
+                    <p class="key-feature__description">333333333 trusting customers</p>
+                </li>
+                <li class="key-feature">
+                    <div class="key-feature__image">
+
+                    </div>
+                    <p class="key-feature__description">99.99% success rate</p>
+                </li>
+                <li class="key-feature">
+                    <div class="key-feature__image">
+                     
+                    </div>
+                    <p class="key-feature__description">Lightting fast CDN</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item"><a href="packages/index.html">Packages</a></li>
+            <li class="mobile-nav__item"><a href="index.html">Customers</a></li>
+            <li class="mobile-nav__item mobile-nav__item--cta"><a href="index.html">Start Hosting</a></li>
+        </ul>
+    </nav>
+    <footer class="main-footer">
+        <nav>
+            <ul class="main-footer__links">
+                <li class="main-footer__link">
+                    <a href="#">Support</a>
+                </li>
+                <li class="main-footer__link">
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
